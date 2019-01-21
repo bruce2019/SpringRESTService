@@ -4,8 +4,8 @@ Microservice to update counter concurrently.
 
 #### Code Checkout
 * Checkout the code locally using
-`cd yourWorkingDirectory`
-`git clone https://github.com/RishiRajSahu/SpringRESTService.git`
+> `cd yourWorkingDirectory`
+> `git clone https://github.com/RishiRajSahu/SpringRESTService.git`
 
 #### Database
 * Start local mysql using docker, assuming docker is already installed on your machine
