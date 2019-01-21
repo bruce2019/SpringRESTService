@@ -4,13 +4,14 @@ Microservice to update counter concurrently.
 
 #### Code Checkout
 * Checkout the code locally using
-> `cd yourWorkingDirectory`
+> cd yourWorkingDirectory
 
-> `git clone https://github.com/RishiRajSahu/SpringRESTService.git`
+> git clone https://github.com/RishiRajSahu/SpringRESTService.git
 
 #### Database
 * Start local mysql using docker, assuming docker is already installed on your machine
-```cd yourWorkingDirectory/SpringRESTService
+> cd yourWorkingDirectory/SpringRESTService
+```
 > docker-compose up
 ```
 The above command will start a local mysql image on docker whose ports are exposed at 3306 for more info check yml file
