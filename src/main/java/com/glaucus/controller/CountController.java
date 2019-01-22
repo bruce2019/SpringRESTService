@@ -25,6 +25,13 @@ public class CountController {
 	@Qualifier("counterService")
 	private CounterService counterService;
 
+	/**
+	 * 
+	 * REST-API request mapper for handling all the requests coming for /api/v1/counter
+	 * 
+	 * @return count of rows effected
+	 * @throws ResourceNotFoundException
+	 */
 	@PutMapping("/counter")
 	public ResponseEntity<Integer> udpateCounter() throws ResourceNotFoundException {
 		int rows = counterService.updateNative();

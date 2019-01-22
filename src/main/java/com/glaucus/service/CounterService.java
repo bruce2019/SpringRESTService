@@ -20,6 +20,11 @@ public class CounterService {
 	@Autowired
 	CounterRepository counterRepository;
 
+	/**
+	 * 
+	 * @return count of records effected
+	 * @throws ResourceNotFoundException
+	 */
 	@Transactional(isolation=Isolation.DEFAULT)
 	public int updateNative() throws ResourceNotFoundException {
 		return counterRepository.incrementCount();

@@ -48,6 +48,9 @@ public class Counter {
 		this.count = count;
 	}
 
+	/**
+	 * Object class's toString method overriding
+	 */
 	@Override
 	public String toString() {
 		return "Counter [id=" + id + ", Count=" + count + "]";

@@ -16,6 +16,14 @@ import com.glaucus.model.Counter;
 @Repository
 @EnableTransactionManagement
 public interface CounterRepository extends JpaRepository<Counter, Long> {
+	
+	/**
+	 * 
+	 * Responsible for running native sql query via JPA
+	 * 
+	 * @return count of records updated
+	 */
+	
 	@Modifying
 	@Query("update Counter c set c.count = c.count+1")
 	int incrementCount();
